@@ -53,7 +53,7 @@ struct ContentView: View {
                         .font(.system(size: 100, weight: .bold, design: .rounded))
                         .foregroundStyle(speedColor)
                         .monospacedDigit()
-                        .contentTransition(.numericText(value: currentSpeed))
+                        .contentTransition(.numericText(countsDown: false))
                         .animation(.easeInOut(duration: 0.2), value: currentSpeed)
 
                     Text(unit.rawValue)
@@ -91,6 +91,11 @@ struct ContentView: View {
                 }
 
                 VStack(spacing: 8) {
+                    Text("LOCATION")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(.gray)
+                        .tracking(3)
+
                     Text(location.locationName)
                         .font(.system(size: 13))
                         .foregroundStyle(Color.gray.opacity(0.7))
