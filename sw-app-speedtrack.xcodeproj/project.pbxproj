@@ -1,9 +1,9 @@
 // !$*UTF8*$!
 {
-	objectVersion = 56;
+	archiveVersion = 1;
 	classes = {
 	};
-	rootObject = 2A0D2F272DD0000000000001 /* Project object */;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		2A0D2F272DD0000000000012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0D2F272DD000000000000C /* ContentView.swift */; };
 		2A0D2F272DD0000000000013 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0D2F272DD000000000000D /* LocationManager.swift */; };
 		2A0D2F272DD0000000000014 /* SpeedUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0D2F272DD000000000000E /* SpeedUnit.swift */; };
+		2A0D2F272DD000000000001C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A0D2F272DD000000000001B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2A0D2F272DD000000000000D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2A0D2F272DD000000000000E /* SpeedUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedUnit.swift; sourceTree = "<group>"; };
 		2A0D2F272DD000000000000F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A0D2F272DD000000000001B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +38,7 @@
 		2A0D2F272DD0000000000002 = {
 			isa = PBXGroup;
 			children = (
-				2A0D2F272DD000000000000A /* SpeedTrack */,
+				2A0D2F272DD000000000000A,
 				2A0D2F272DD0000000000006 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,7 +51,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A0D2F272DD000000000000A /* SpeedTrack */ = {
+		2A0D2F272DD000000000000A = {
 			isa = PBXGroup;
 			children = (
 				2A0D2F272DD000000000000B /* SpeedTrackApp.swift */,
@@ -57,6 +59,7 @@
 				2A0D2F272DD000000000000D /* LocationManager.swift */,
 				2A0D2F272DD000000000000E /* SpeedUnit.swift */,
 				2A0D2F272DD000000000000F /* Info.plist */,
+				2A0D2F272DD000000000001B /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +121,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0D2F272DD000000000001C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +259,10 @@
 		2A0D2F272DD0000000000019 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4Z88UHT9AL;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -265,8 +270,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SpeedTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SW.SpeedTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -277,9 +283,10 @@
 		2A0D2F272DD000000000001A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4Z88UHT9AL;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -287,8 +294,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SpeedTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SW.SpeedTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,4 +327,5 @@
 		};
 /* End XCConfigurationList section */
 	};
+	rootObject = 2A0D2F272DD0000000000001 /* Project object */;
 }
